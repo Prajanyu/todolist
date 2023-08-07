@@ -74,8 +74,11 @@ function App() {
           </div>
         ))
       }
-      <input onChange={newItem} type="text" name="item" value={item} className="add-text" placeholder="Add Item" />
+      <div class="form-container">
+      <input autoComplete="off" onChange={newItem} type="text" name="item" value={item} className="add-text" placeholder="Add Item" />
       <button onClick={addItem} type="submit" className="add-btn">+</button>
+      </div>
+      
     </div>
   );
 }
