@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb://0.0.0.0:27017/todo', {useNewUrlParser: true})
+mongoose.connect('mongodb://0.0.0.0:27017/todo', {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => {
     console.log("Connected to Database");
 })
